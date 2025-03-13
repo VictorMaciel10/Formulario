@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2>Formulário Acadêmico</h2>
-        <p class="subtitulo">Malu Belini</p> <!-- Novo nome abaixo do título -->
+        <p class="subtitulo">Malu Belini</p> <!-- Nome abaixo do título -->
 
         <form id="formulario">
             <label for="nome">Nome:</label>
@@ -42,12 +42,12 @@
             <label for="estado">UF onde mora:</label>
             <select id="estado" name="estado" onchange="carregarCidades()">
                 <option value="">Selecione um estado</option>
-                <option value="SP">SP</option>
-                <option value="RJ">RJ</option>
-                <option value="MG">BH</option>
-                <option value="BA">BA</option>
-                <option value="AC">AC</option>
-                <option value="AM">AM</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="BA">Bahia</option>
+                <option value="AC">Acre</option>
+                <option value="AM">Amazonas</option>
             </select>
 
             <label for="cidade">Cidade onde mora:</label>
@@ -61,8 +61,16 @@
                 <option value="Santana">Santana</option>
             </select>
 
-            <button type="button" onclick="preencherAutomatico()">Enviar</button>
+            <button type="button" onclick="exibirMensagem()">Enviar</button>
         </form>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Parabéns! Cadastro enviado com sucesso! Boa sorte, Malu!</p>
+            <button onclick="fecharModal()">Fechar</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
