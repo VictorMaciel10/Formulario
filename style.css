@@ -11,6 +11,18 @@ body {
     flex-direction: column;
 }
 
+.logo-malu {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFB6C1; /* Rosa claro */
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
 .container {
     background: white;
     padding: 20px;
