@@ -4,8 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
 }
 
 .container {
@@ -13,7 +16,26 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Marca no canto esquerdo */
+.marca {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: #FFB6C1; /* Rosa claro */
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 h2 {
