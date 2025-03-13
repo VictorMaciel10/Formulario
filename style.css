@@ -11,18 +11,6 @@ body {
     flex-direction: column;
 }
 
-.logo-malu {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    font-size: 36px;
-    font-weight: bold;
-    color: #FFB6C1; /* Rosa claro */
-    font-family: 'Arial', sans-serif;
-    text-transform: uppercase;
-}
-
 .container {
     background: white;
     padding: 20px;
@@ -39,15 +27,14 @@ body {
     }
 }
 
-/* Marca no canto esquerdo */
-.marca {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    color: #FFB6C1; /* Rosa claro */
-    font-size: 16px;
+/* Nome 'Malu Belini' abaixo do título */
+.subtitulo {
+    text-align: center;
+    font-size: 18px;
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    color: #FFB6C1; /* Rosa claro */
+    margin-top: -10px; /* Aproxima do título */
+    margin-bottom: 15px;
 }
 
 h2 {
