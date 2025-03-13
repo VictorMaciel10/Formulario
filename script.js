@@ -74,3 +74,14 @@ function preencherAutomatico() {
     document.getElementById("data_inicio").value = gerarData();
     document.getElementById("data_termino").value = gerarData();
 }
+
+/* ============ NOVA FUNCIONALIDADE ============ */
+// Exibir modal ao clicar no botão "Enviar"
+function exibirMensagem() {
+    document.getElementById("modal").style.display = "block";
+}
+
+// Fechar modal ao clicar no botão "Fechar"
+function fecharModal() {
+    document.getElementById("modal").style.display = "none";
+}
